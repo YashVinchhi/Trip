@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Registration - Imagica & Mahabaleshwar 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-pattern {
+            background-color: #4f46e5;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%236366f1' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0L80 12v2L54 40h-2zm4 0L80 16v2L58 40h-2zm4 0L80 20v2L62 40h-2zm4 0L80 24v2L66 40h-2zm4 0L80 28v2L70 40h-2zm4 0L80 32v2L74 40h-2zm4 0L80 36v2L78 40h-2zm4 0L80 40v2l-2 2h-2l2-2v-2zm-4 0v2l-6 6h-2l6-6v-2zm-4 0v2l-10 10h-2l10-10v-2zm-4 0v2L54 56h-2l14-14v-2zm-4 0v2L50 60h-2l18-18v-2zm-4 0v2L46 64h-2l22-22v-2zm-4 0v2L42 68h-2l26-26v-2zm-4 0v2l30 30h-2L30 42v-2zm-4 0v2l34 34h-2L26 42v-2zm-4 0v2l38 38h-2L22 42v-2zM0 42l18 18h-2L0 44v-2zm0 4l14 14h-2L0 48v-2zm0 4l10 10h-2L0 52v-2zm0 4l6 6h-2L0 56v-2zm0 4l2 2h-2L0 60v-2z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .timeline-line {
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #e5e7eb;
+            z-index: 0;
+        }
+        @media (min-width: 768px) {
+            .timeline-line {
+                left: 50%;
+                margin-left: -2px;
+            }
+        }
+        /* Loading Spinner */
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 3px solid #4f46e5;
+            width: 24px;
+            height: 24px;
+            -webkit-animation: spin 1s linear infinite; /* Safari */
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600"><i class="fas fa-route mr-2"></i>Trip Plan '26</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#itinerary" class="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Itinerary</a>
+                    <a href="#register" class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 transition">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-pattern text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="bg-indigo-800 bg-opacity-50 text-indigo-100 px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Feb 23 - Feb 27, 2026</span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Imagica | Pune | Lonavala | Mahabaleshwar</h1>
+            <p class="text-xl md:text-2xl text-indigo-100 mb-8">5 Days of Adventure, Thrills, and Memories.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-lg">
+                    <p class="text-sm uppercase tracking-wider">Total Cost</p>
+                    <p class="text-3xl font-bold">₹8,000</p>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-lg">
+                    <p class="text-sm uppercase tracking-wider">Deposit Due</p>
+                    <p class="text-3xl font-bold">₹3,000</p>
+                    <p class="text-xs">by 29/1/26</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Itinerary Section -->
+    <section id="itinerary" class="py-16 max-w-5xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">Trip Itinerary</h2>
+            <p class="text-gray-500 mt-2">A detailed breakdown of our journey.</p>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+
+            <!-- Day 1 -->
+            <div class="relative z-10 mb-8 md:flex md:justify-between items-center group">
+                <div class="hidden md:block md:w-5/12 text-right pr-8">
+                    <h3 class="text-xl font-bold text-indigo-600">Day 1: Departure</h3>
+                    <p class="text-gray-500">23rd Feb 2026</p>
+                </div>
+                <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
+                    <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-lg">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <div class="md:hidden ml-4">
+                        <h3 class="text-xl font-bold text-indigo-600">Day 1: Departure</h3>
+                        <p class="text-gray-500">23rd Feb 2026</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-indigo-500">
+                    <h4 class="font-bold text-lg mb-2">Rajkot <i class="fas fa-arrow-right text-xs mx-1"></i> Mumbai</h4>
+                    <p class="text-gray-600 mb-2"><i class="fas fa-clock mr-2 text-indigo-400"></i>3:00 PM</p>
+                    <p class="text-gray-700">Train journey begins! Get ready for a fun ride with friends.</p>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="relative z-10 mb-8 md:flex md:justify-between items-center flex-row-reverse group">
+                <div class="hidden md:block md:w-5/12 text-left pl-8">
+                    <h3 class="text-xl font-bold text-orange-500">Day 2: Imagica & Lonavala</h3>
+                    <p class="text-gray-500">24th Feb 2026</p>
+                </div>
+                <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
+                    <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white shadow-lg">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="md:hidden ml-4">
+                        <h3 class="text-xl font-bold text-orange-500">Day 2: Imagica & Lonavala</h3>
+                        <p class="text-gray-500">24th Feb 2026</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-orange-500">
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-bus text-orange-400 mr-2"></i>Arrival & Breakfast at Lonavala Resort</li>
+                        <li><i class="fas fa-ticket-alt text-orange-400 mr-2"></i><strong>Full Day at Imagica</strong> (Lunch Included)</li>
+                        <li><i class="fas fa-utensils text-orange-400 mr-2"></i>Dinner after visit</li>
+                        <li><i class="fas fa-moon text-orange-400 mr-2"></i>Night Stay in Lonavala</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="relative z-10 mb-8 md:flex md:justify-between items-center group">
+                <div class="hidden md:block md:w-5/12 text-right pr-8">
+                    <h3 class="text-xl font-bold text-green-600">Day 3: Pune & Mahabaleshwar</h3>
+                    <p class="text-gray-500">25th Feb 2026</p>
+                </div>
+                <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
+                    <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white shadow-lg">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="md:hidden ml-4">
+                        <h3 class="text-xl font-bold text-green-600">Day 3: Pune & Mahabaleshwar</h3>
+                        <p class="text-gray-500">25th Feb 2026</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-green-500">
+                     <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-university text-green-500 mr-2"></i>Industrial / College Visit in Pune</li>
+                        <li><i class="fas fa-road text-green-500 mr-2"></i>Scenic drive to Mahabaleshwar</li>
+                        <li><i class="fas fa-bed text-green-500 mr-2"></i>Check-in at Mahabaleshwar Resort</li>
+                        <li><i class="fas fa-shopping-bag text-green-500 mr-2"></i>Night Market Visit</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="relative z-10 mb-8 md:flex md:justify-between items-center flex-row-reverse group">
+                <div class="hidden md:block md:w-5/12 text-left pl-8">
+                    <h3 class="text-xl font-bold text-pink-500">Day 4: Sightseeing & Return</h3>
+                    <p class="text-gray-500">26th Feb 2026</p>
+                </div>
+                <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
+                    <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white shadow-lg">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="md:hidden ml-4">
+                        <h3 class="text-xl font-bold text-pink-500">Day 4: Sightseeing</h3>
+                        <p class="text-gray-500">26th Feb 2026</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-pink-500">
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-mountain text-pink-400 mr-2"></i><strong>Full Day Sightseeing</strong></li>
+                        <li><i class="fas fa-leaf text-pink-400 mr-2"></i>Viewpoints & Greenery</li>
+                        <li><i class="fas fa-bus text-pink-400 mr-2"></i>Depart for Mumbai @ 5:00 PM</li>
+                        <li><i class="fas fa-train text-pink-400 mr-2"></i>Train: Mumbai <i class="fas fa-arrow-right text-xs"></i> Rajkot</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="relative z-10 mb-8 md:flex md:justify-between items-center group">
+                 <div class="hidden md:block md:w-5/12 text-right pr-8">
+                    <h3 class="text-xl font-bold text-gray-600">Day 5: Arrival</h3>
+                    <p class="text-gray-500">27th Feb 2026</p>
+                </div>
+                <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
+                    <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center text-white shadow-lg">
+                        <i class="fas fa-home"></i>
+                    </div>
+                     <div class="md:hidden ml-4">
+                        <h3 class="text-xl font-bold text-gray-600">Day 5: Arrival</h3>
+                        <p class="text-gray-500">27th Feb 2026</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-gray-500">
+                    <p class="text-gray-700"><i class="fas fa-clock mr-2"></i>Expected arrival in Rajkot at 11:00 AM.</p>
+                    <p class="text-indigo-600 font-semibold mt-2">Home Sweet Home! 🏠</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="register" class="bg-indigo-50 py-16 px-4">
+        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-xl overflow-hidden">
+            <div class="bg-indigo-600 py-6 px-8">
+                <h2 class="text-2xl font-bold text-white"><i class="fas fa-clipboard-list mr-2"></i>Student Registration Form</h2>
+                <p class="text-indigo-100 mt-1">Please fill in your details accurately.</p>
+            </div>
+            
+            <!-- HIDDEN IFRAME to catch the Google Form response silently -->
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+            <!-- FORM Configured for Your Specific Google Form -->
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSd8i7ajgY8EwJiiFIrXREOAzPPg_vHobRO5IgHxjDckozvd1g/formResponse" 
+                  method="POST" 
+                  target="hidden_iframe"
+                  onsubmit="handleFormSubmit()"
+                  class="p-8 space-y-6">
+                
+                <!-- Personal Details -->
+                <h3 class="text-lg font-semibold text-gray-800 border-b pb-2">Student Details</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input type="text" name="entry.527900476" required placeholder="As per college ID" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                     <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" name="entry.259112202" required placeholder="example@rku.ac.in" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Date of Birth</label>
+                        <input type="date" name="entry.438454627" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Gender</label>
+                        <select name="entry.622069447" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Semester / Division (Ex: B)</label>
+                        <input type="text" name="entry.1664701958" required placeholder="B" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                    <div>
+                         <label class="block text-sm font-medium text-gray-700 mb-1">Blood Group</label>
+                        <select name="entry.1633345607" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                            <option value="A+ / A-">A+ / A-</option>
+                            <option value="B+ / B-">B+ / B-</option>
+                            <option value="O+ / O-">O+ / O-</option>
+                            <option value="AB+ / AB-">AB+ / AB-</option>
+                            <option value="Unknown">Unknown</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- ID & Parent Info -->
+                <h3 class="text-lg font-semibold text-gray-800 border-b pb-2 pt-4">Contact & Guardian</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Student Mobile / WhatsApp</label>
+                        <input type="tel" name="entry.1914184593" required placeholder="+91..." class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                     <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Type of ID Proof Carried</label>
+                        <input type="text" name="entry.1413885980" required placeholder="Aadhaar Card / License" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Father's / Guardian's Name</label>
+                        <input type="text" name="entry.1576929271" required placeholder="Full Name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Father's / Guardian's Mobile</label>
+                        <input type="tel" name="entry.1625731348" required placeholder="+91..." class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Any Medical Conditions?</label>
+                        <input type="text" name="entry.1854780870" value="No" placeholder="If none, type 'No'" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                     <input type="hidden" name="entry.981615340" value="No"> <!-- Hidden field to satisfy Google Form requirement -->
+                </div>
+
+                <!-- Payment Info -->
+                <h3 class="text-lg font-semibold text-gray-800 border-b pb-2 pt-4">Payment Verification</h3>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="md:col-span-1">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Upload Payment Screenshot</label>
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <i class="fab fa-whatsapp text-green-500 text-xl"></i>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm text-yellow-700">
+                                        <strong>Important Step:</strong> This form confirms your registration details. After clicking Submit, you <strong>MUST send your payment screenshot</strong> to one of the organizers via WhatsApp:
+                                    </p>
+                                    <div class="mt-2 text-sm text-yellow-800 font-semibold grid grid-cols-1 md:grid-cols-2 gap-2">
+                                        <span><i class="fab fa-whatsapp mr-1"></i> +91 8200408865</span>
+                                        <span><i class="fab fa-whatsapp mr-1"></i> +91 7984417971</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Undertaking -->
+                <h3 class="text-lg font-semibold text-gray-800 border-b pb-2 pt-4">Undertaking</h3>
+                <div class="space-y-3 pt-2">
+                    <label class="flex items-start space-x-3">
+                        <input type="checkbox" name="entry.841920728" value="I confirm that all the details provided above are correct." checked required class="mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        <span class="text-sm text-gray-600">I confirm that all the details provided above are correct.</span>
+                    </label>
+                    <label class="flex items-start space-x-3">
+                        <input type="checkbox" name="entry.841920728" value="I agree to follow all trip rules, schedules, and safety instructions." checked required class="mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        <span class="text-sm text-gray-600">I agree to follow all trip rules, schedules, and safety instructions.</span>
+                    </label>
+                </div>
+
+                <!-- Digital Signature -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                     <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Guardian Signature (Type Name)</label>
+                        <input type="text" name="entry.1466493620" required placeholder="Type Guardian Name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Guardian Sign Mobile</label>
+                        <input type="tel" name="entry.180629544" required placeholder="Type Mobile Number" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <div id="message-box" class="hidden rounded-md p-4 mb-4 text-center mt-6"></div>
+
+                <button type="submit" id="submit-button" class="mt-6 w-full bg-indigo-600 text-white font-bold py-3 rounded-lg hover:bg-indigo-700 transition shadow-lg transform hover:-translate-y-1 flex justify-center items-center">
+                    <span id="btn-text">Submit Registration</span>
+                    <div id="btn-loader" class="loader ml-3 hidden"></div>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold mb-6">Have Queries? Contact Us</h3>
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a href="tel:+918200408865" class="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-full transition flex items-center"><i class="fas fa-phone-alt mr-2 text-indigo-400"></i>+91 8200408865</a>
+                <a href="tel:+917984417971" class="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-full transition flex items-center"><i class="fas fa-phone-alt mr-2 text-indigo-400"></i>+91 7984417971</a>
+                <a href="tel:+916353050513" class="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-full transition flex items-center"><i class="fas fa-phone-alt mr-2 text-indigo-400"></i>+91 6353050513</a>
+                <a href="tel:+917016082295" class="bg-gray-800 hover:bg-gray-700 px-4 py-2 rounded-full transition flex items-center"><i class="fas fa-phone-alt mr-2 text-indigo-400"></i>+91 7016082295</a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2026 Student Trip Committee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Google Forms Success Handler -->
+    <script>
+        var submitted = false;
+
+        // Attach event listener here instead of inline HTML to ensure variables are defined
+        document.getElementById('hidden_iframe').onload = function() {
+            if (submitted) {
+                showSuccess();
+            }
+        };
+
+        function handleFormSubmit() {
+            submitted = true;
+            document.getElementById('submit-button').disabled = true;
+            document.getElementById('btn-text').textContent = "Submitting...";
+            document.getElementById('btn-loader').classList.remove('hidden');
+        }
+
+        function showSuccess() {
+            // This function runs when the hidden iframe loads the response
+            const messageBox = document.getElementById('message-box');
+            messageBox.innerHTML = `
+                <div class="text-green-700">
+                    <i class="fas fa-check-circle text-3xl mb-2"></i><br>
+                    <strong>Registration Successful!</strong><br>
+                    Please remember to send your payment screenshot to WhatsApp.
+                </div>
+            `;
+            messageBox.classList.remove('hidden');
+            messageBox.classList.add('bg-green-100');
+            
+            // Reset Button
+            document.getElementById('submit-button').classList.add('hidden');
+            document.getElementById('btn-loader').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
