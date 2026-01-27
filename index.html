@@ -31,14 +31,13 @@
                 margin-left: -2px;
             }
         }
-        /* Loading Spinner */
         .loader {
             border: 3px solid #f3f3f3;
             border-radius: 50%;
             border-top: 3px solid #4f46e5;
             width: 24px;
             height: 24px;
-            -webkit-animation: spin 1s linear infinite; /* Safari */
+            -webkit-animation: spin 1s linear infinite;
             animation: spin 1s linear infinite;
         }
         @keyframes spin {
@@ -90,10 +89,8 @@
             <h2 class="text-3xl font-bold text-gray-900">Trip Itinerary</h2>
             <p class="text-gray-500 mt-2">A detailed breakdown of our journey.</p>
         </div>
-
         <div class="relative">
             <div class="timeline-line"></div>
-
             <!-- Day 1 -->
             <div class="relative z-10 mb-8 md:flex md:justify-between items-center group">
                 <div class="hidden md:block md:w-5/12 text-right pr-8">
@@ -101,117 +98,65 @@
                     <p class="text-gray-500">23rd Feb 2026</p>
                 </div>
                 <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
-                    <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-lg">
-                        <i class="fas fa-train"></i>
-                    </div>
-                    <div class="md:hidden ml-4">
-                        <h3 class="text-xl font-bold text-indigo-600">Day 1: Departure</h3>
-                        <p class="text-gray-500">23rd Feb 2026</p>
-                    </div>
+                    <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-lg"><i class="fas fa-train"></i></div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-indigo-500">
                     <h4 class="font-bold text-lg mb-2">Rajkot <i class="fas fa-arrow-right text-xs mx-1"></i> Mumbai</h4>
-                    <p class="text-gray-600 mb-2"><i class="fas fa-clock mr-2 text-indigo-400"></i>3:00 PM</p>
-                    <p class="text-gray-700">Train journey begins! Get ready for a fun ride with friends.</p>
+                    <p class="text-gray-700">Train journey begins! (3:00 PM)</p>
                 </div>
             </div>
-
             <!-- Day 2 -->
             <div class="relative z-10 mb-8 md:flex md:justify-between items-center flex-row-reverse group">
                 <div class="hidden md:block md:w-5/12 text-left pl-8">
-                    <h3 class="text-xl font-bold text-orange-500">Day 2: Imagica & Lonavala</h3>
+                    <h3 class="text-xl font-bold text-orange-500">Day 2: Imagica</h3>
                     <p class="text-gray-500">24th Feb 2026</p>
                 </div>
                 <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
-                    <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white shadow-lg">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <div class="md:hidden ml-4">
-                        <h3 class="text-xl font-bold text-orange-500">Day 2: Imagica & Lonavala</h3>
-                        <p class="text-gray-500">24th Feb 2026</p>
-                    </div>
+                    <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white shadow-lg"><i class="fas fa-rocket"></i></div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-orange-500">
-                    <ul class="space-y-2 text-gray-700">
-                        <li><i class="fas fa-bus text-orange-400 mr-2"></i>Arrival & Breakfast at Lonavala Resort</li>
-                        <li><i class="fas fa-ticket-alt text-orange-400 mr-2"></i><strong>Full Day at Imagica</strong> (Lunch Included)</li>
-                        <li><i class="fas fa-utensils text-orange-400 mr-2"></i>Dinner after visit</li>
-                        <li><i class="fas fa-moon text-orange-400 mr-2"></i>Night Stay in Lonavala</li>
-                    </ul>
+                    <p class="text-gray-700">Full Day at Imagica & Lonavala Stay</p>
                 </div>
             </div>
-
-            <!-- Day 3 -->
+             <!-- Day 3 -->
             <div class="relative z-10 mb-8 md:flex md:justify-between items-center group">
                 <div class="hidden md:block md:w-5/12 text-right pr-8">
-                    <h3 class="text-xl font-bold text-green-600">Day 3: Pune & Mahabaleshwar</h3>
+                    <h3 class="text-xl font-bold text-green-600">Day 3: Pune</h3>
                     <p class="text-gray-500">25th Feb 2026</p>
                 </div>
                 <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
-                    <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white shadow-lg">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <div class="md:hidden ml-4">
-                        <h3 class="text-xl font-bold text-green-600">Day 3: Pune & Mahabaleshwar</h3>
-                        <p class="text-gray-500">25th Feb 2026</p>
-                    </div>
+                    <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white shadow-lg"><i class="fas fa-industry"></i></div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-green-500">
-                     <ul class="space-y-2 text-gray-700">
-                        <li><i class="fas fa-university text-green-500 mr-2"></i>Industrial / College Visit in Pune</li>
-                        <li><i class="fas fa-road text-green-500 mr-2"></i>Scenic drive to Mahabaleshwar</li>
-                        <li><i class="fas fa-bed text-green-500 mr-2"></i>Check-in at Mahabaleshwar Resort</li>
-                        <li><i class="fas fa-shopping-bag text-green-500 mr-2"></i>Night Market Visit</li>
-                    </ul>
+                    <p class="text-gray-700">Industrial Visit & Mahabaleshwar Night Market</p>
                 </div>
             </div>
-
-            <!-- Day 4 -->
+             <!-- Day 4 -->
             <div class="relative z-10 mb-8 md:flex md:justify-between items-center flex-row-reverse group">
                 <div class="hidden md:block md:w-5/12 text-left pl-8">
-                    <h3 class="text-xl font-bold text-pink-500">Day 4: Sightseeing & Return</h3>
+                    <h3 class="text-xl font-bold text-pink-500">Day 4: Sightseeing</h3>
                     <p class="text-gray-500">26th Feb 2026</p>
                 </div>
                 <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
-                    <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white shadow-lg">
-                        <i class="fas fa-camera-retro"></i>
-                    </div>
-                    <div class="md:hidden ml-4">
-                        <h3 class="text-xl font-bold text-pink-500">Day 4: Sightseeing</h3>
-                        <p class="text-gray-500">26th Feb 2026</p>
-                    </div>
+                    <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white shadow-lg"><i class="fas fa-camera-retro"></i></div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-pink-500">
-                    <ul class="space-y-2 text-gray-700">
-                        <li><i class="fas fa-mountain text-pink-400 mr-2"></i><strong>Full Day Sightseeing</strong></li>
-                        <li><i class="fas fa-leaf text-pink-400 mr-2"></i>Viewpoints & Greenery</li>
-                        <li><i class="fas fa-bus text-pink-400 mr-2"></i>Depart for Mumbai @ 5:00 PM</li>
-                        <li><i class="fas fa-train text-pink-400 mr-2"></i>Train: Mumbai <i class="fas fa-arrow-right text-xs"></i> Rajkot</li>
-                    </ul>
+                    <p class="text-gray-700">Mahabaleshwar Sightseeing & Return Train</p>
                 </div>
             </div>
-
-            <!-- Day 5 -->
+             <!-- Day 5 -->
             <div class="relative z-10 mb-8 md:flex md:justify-between items-center group">
-                 <div class="hidden md:block md:w-5/12 text-right pr-8">
+                <div class="hidden md:block md:w-5/12 text-right pr-8">
                     <h3 class="text-xl font-bold text-gray-600">Day 5: Arrival</h3>
                     <p class="text-gray-500">27th Feb 2026</p>
                 </div>
                 <div class="flex items-center justify-start md:justify-center mb-2 md:mb-0 w-full md:w-2/12">
-                    <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center text-white shadow-lg">
-                        <i class="fas fa-home"></i>
-                    </div>
-                     <div class="md:hidden ml-4">
-                        <h3 class="text-xl font-bold text-gray-600">Day 5: Arrival</h3>
-                        <p class="text-gray-500">27th Feb 2026</p>
-                    </div>
+                    <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center text-white shadow-lg"><i class="fas fa-home"></i></div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-gray-500">
-                    <p class="text-gray-700"><i class="fas fa-clock mr-2"></i>Expected arrival in Rajkot at 11:00 AM.</p>
-                    <p class="text-indigo-600 font-semibold mt-2">Home Sweet Home! 🏠</p>
+                    <p class="text-gray-700">Arrival at Rajkot (11:00 AM)</p>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -224,40 +169,36 @@
             </div>
             
             <form id="tripForm" class="p-8 space-y-6">
-                
                 <!-- 1. Email -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1">Email * (Question 1)</label>
-                    <input type="email" name="entry.259112202" required placeholder="your.email@example.com" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                    <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- 2. Full Name -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Full Name (As per Govt ID) *</label>
-                        <input type="text" name="entry.527900476" required placeholder="First Middle Last" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <input type="text" name="fullName" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-                    
                     <!-- 3. Gender -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Gender *</label>
-                        <select name="entry.622069447" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <select name="gender" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                             <option value="">Select Gender</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                         </select>
                     </div>
-
                     <!-- 4. Date of Birth -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Date of Birth *</label>
-                        <input type="date" name="entry.438454627" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <input type="date" name="dob" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-
                     <!-- 5. Division -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Division *</label>
-                        <select name="entry.1664701958" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <select name="division" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                             <option value="">Select Division</option>
                             <option value="A">A</option>
                             <option value="B">B</option>
@@ -266,100 +207,78 @@
                             <option value="G">G</option>
                         </select>
                     </div>
-
                     <!-- 6. Student Mobile -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Student Mobile Number *</label>
-                        <input type="tel" name="entry.1914184593" required placeholder="+91..." class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <input type="tel" name="studentMobile" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-
                     <!-- 7. Student Email ID -->
-                    <!-- Note: I am leaving this input without a name attribute since I only have one email ID from the provided link, which I assigned to Q1 above. If Q7 is critical, ensure Q1 captures it or provide the specific Q7 ID. -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Student Email ID (Optional)</label>
-                        <input type="email" placeholder="college.email@rku.ac.in" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <input type="email" name="studentEmail" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-
                     <!-- 8. Parent Name -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Parent / Guardian Name *</label>
-                        <input type="text" name="entry.1576929271" required placeholder="Parent Name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <input type="text" name="parentName" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-
                     <!-- 9. Parent Mobile -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Parent / Guardian Contact *</label>
-                        <input type="tel" name="entry.1625731348" required placeholder="Parent Mobile" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <input type="tel" name="parentMobile" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-
                     <!-- 10. Govt ID Type -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Government ID Type *</label>
-                        <select name="entry.1413885980" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <select name="idType" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                             <option value="">Select ID Type</option>
                             <option value="Aadhaar Card">Aadhaar Card</option>
                             <option value="Driving License">Driving License</option>
                             <option value="Passport">Passport</option>
                         </select>
                     </div>
-
-                    <!-- 12. Blood Group (Skipped 11 intentionally) -->
+                    <!-- 11. Upload ID Proof -->
+                    <div class="md:col-span-2">
+                         <label class="block text-sm font-medium text-gray-700 mb-1">Upload ID Proof * (PDF or Image)</label>
+                         <input type="file" id="idProofFile" required class="w-full px-4 py-2 border rounded-lg bg-gray-50 focus:outline-none">
+                         <p class="text-xs text-gray-500 mt-1">Max 5MB</p>
+                    </div>
+                    <!-- 12. Blood Group -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Blood Group *</label>
-                        <select name="entry.1633345607" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <select name="bloodGroup" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                             <option value="">Select Group</option>
                             <option value="A+/A-">A+/A-</option>
                             <option value="B+/B-">B+/B-</option>
-                            <option value="0+/0-">O+/O-</option> <!-- Fixed value to match PDF 0+/0- vs O+/O- discrepancy, Google Forms usually standardizes to O but PDF says 0. Keeping user provided link value style if possible or standard text. PDF says 0+/0-. Link used "Don't Know". -->
+                            <option value="0+/0-">0+/0-</option> 
                             <option value="AB+/AB-">AB+/AB-</option>
                             <option value="Don't Know">Don't Know</option>
                         </select>
                     </div>
-
-                    <!-- 13. Medical Conditions -->
+                    <!-- 13. Medical -->
                     <div class="md:col-span-2">
                         <label class="block text-sm font-medium text-gray-700 mb-1">Any Medical Conditions? *</label>
-                        <input type="text" name="entry.1854780870" required placeholder="Type 'None' if applicable" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <input type="text" name="medical" required placeholder="Type 'None' if applicable" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-
                     <!-- 15. Emergency Name -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Emergency Contact Name *</label>
-                        <input type="text" name="entry.1466493620" required placeholder="Name" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <input type="text" name="emergencyName" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-
                     <!-- 16. Emergency Number -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Emergency Contact Number *</label>
-                        <input type="tel" name="entry.180629544" required placeholder="Number" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+                        <input type="tel" name="emergencyNumber" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none">
                     </div>
-
                     <!-- 17. Additional Info -->
                     <div class="md:col-span-2">
                         <label class="block text-sm font-medium text-gray-700 mb-1">Any Additional Information</label>
-                        <textarea name="entry.981615340" placeholder="Optional" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
+                        <textarea name="additional" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
                     </div>
-                </div>
-
-                <!-- 11. Document Upload Instructions (Handling PDF Question 11) -->
-                <div class="mt-6 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                    <div class="flex">
-                        <div class="flex-shrink-0">
-                            <i class="fas fa-camera text-yellow-500 text-xl"></i>
-                        </div>
-                        <div class="ml-3">
-                            <h3 class="text-sm font-bold text-yellow-800">Required Documents (ID Proof & Payment)</h3>
-                            <p class="text-sm text-yellow-700 mt-1">
-                                Since this is a quick registration form, please send the following documents via <strong>WhatsApp</strong> immediately after submitting this form:
-                            </p>
-                            <ul class="list-disc list-inside text-sm text-yellow-700 mt-1">
-                                <li>Photo of your <strong>Government ID Proof</strong> (Aadhaar/License)</li>
-                                <li>Screenshot of your <strong>Payment/Deposit</strong></li>
-                            </ul>
-                            <div class="mt-3 text-sm font-bold text-gray-700">
-                                Send to: +91 8200408865 | +91 7984417971
-                            </div>
-                        </div>
+                     <!-- Payment Upload -->
+                    <div class="md:col-span-2 bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                         <label class="block text-sm font-bold text-yellow-800 mb-1">Upload Payment Screenshot *</label>
+                         <input type="file" id="paymentFile" required class="w-full px-4 py-2 border rounded-lg bg-white focus:outline-none">
                     </div>
                 </div>
 
@@ -367,12 +286,8 @@
                 <div class="space-y-3 pt-4 border-t">
                     <h3 class="text-lg font-semibold text-gray-800">Declaration & Consent *</h3>
                     <label class="flex items-start space-x-3">
-                        <input type="checkbox" name="entry.841920728" value="I confirm that all the details provided above are correct." required class="mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
-                        <span class="text-sm text-gray-600">I confirm that all the details provided above are correct.</span>
-                    </label>
-                    <label class="flex items-start space-x-3">
-                        <input type="checkbox" name="entry.841920728" value="I agree to follow all trip rules, schedules, and safety instructions." required class="mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
-                        <span class="text-sm text-gray-600">I agree to follow all trip rules, schedules, and safety instructions.</span>
+                        <input type="checkbox" name="declaration" value="Confirmed" required class="mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+                        <span class="text-sm text-gray-600">I confirm that all the details provided above are correct and I agree to follow all trip rules.</span>
                     </label>
                 </div>
 
@@ -399,40 +314,67 @@
     </footer>
 
     <script>
-        const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd8i7ajgY8EwJiiFIrXREOAzPPg_vHobRO5IgHxjDckozvd1g/formResponse";
+        // *** PASTE YOUR APPS SCRIPT WEB APP URL HERE ***
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyC_DOgudCToRFa26dKxzJhY6V4OLsohLLQ_3Wa3QLX3dzzPz4AKlV5__msuql1qO0Z/exec";
         
+        // Helper to convert file to base64
+        const fileToBase64 = file => new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => resolve({
+                name: file.name,
+                mimeType: file.type,
+                data: reader.result.split(',')[1] // Get base64 content
+            });
+            reader.onerror = error => reject(error);
+        });
+
         document.getElementById('tripForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
+            if (SCRIPT_URL.includes("PASTE_YOUR")) {
+                alert("Please deploy the Apps Script and paste the URL in the code!");
+                return;
+            }
+
             const submitBtn = document.getElementById('submit-button');
             const btnText = document.getElementById('btn-text');
             const btnLoader = document.getElementById('btn-loader');
             const messageBox = document.getElementById('message-box');
 
             submitBtn.disabled = true;
-            btnText.textContent = "Submitting...";
+            btnText.textContent = "Uploading...";
             btnLoader.classList.remove('hidden');
             messageBox.classList.add('hidden');
 
             try {
+                // Gather Basic Text Data
                 const formData = new FormData(this);
-                const params = new URLSearchParams();
-                for (const pair of formData) {
-                    params.append(pair[0], pair[1]);
+                const data = Object.fromEntries(formData.entries());
+
+                // Handle ID Proof
+                const idFile = document.getElementById('idProofFile').files[0];
+                if (idFile) {
+                    data.idProofFile = await fileToBase64(idFile);
                 }
 
-                await fetch(GOOGLE_FORM_URL, {
+                // Handle Payment File
+                const payFile = document.getElementById('paymentFile').files[0];
+                if (payFile) {
+                    data.paymentFile = await fileToBase64(payFile);
+                }
+
+                // Send to Apps Script
+                await fetch(SCRIPT_URL, {
                     method: "POST",
-                    mode: "no-cors",
-                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-                    body: params
+                    body: JSON.stringify(data)
                 });
 
                 messageBox.innerHTML = `
                     <div class="text-green-700 bg-green-100 p-4 rounded-lg">
                         <i class="fas fa-check-circle text-3xl mb-2"></i><br>
                         <strong>Registration Successful!</strong><br>
-                        Please send your <strong>ID Proof</strong> and <strong>Payment Screenshot</strong> to WhatsApp now.
+                        Files uploaded and data saved.
                     </div>
                 `;
                 messageBox.classList.remove('hidden');
@@ -440,7 +382,7 @@
 
             } catch (error) {
                 console.error("Error:", error);
-                messageBox.innerHTML = `<div class="text-red-700 bg-red-100 p-4 rounded-lg">Submission Failed. Please try again.</div>`;
+                messageBox.innerHTML = `<div class="text-red-700 bg-red-100 p-4 rounded-lg">Submission Failed. ${error}</div>`;
                 messageBox.classList.remove('hidden');
             } finally {
                 submitBtn.disabled = false;
