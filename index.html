@@ -100,7 +100,7 @@
     <section id="itinerary" class="py-12 sm:py-24 max-w-5xl mx-auto px-4 overflow-hidden">
         <div class="text-center mb-10 sm:mb-20">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Trip Itinerary</h2>
-            <p class="text-gray-500 mt-2 text-sm sm:text-base">A detailed breakdown of our journey.</p>
+            <p class="text-gray-500 mt-2 text-sm sm:text-base">Hover over the cards to see the full plan.</p>
         </div>
         
         <!-- VERTICAL LAYOUT (All Devices) -->
@@ -118,15 +118,23 @@
                         <i class="fas fa-train text-xl"></i>
                     </div>
                 </div>
-                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-indigo-500 ml-12 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10">
+                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-indigo-500 ml-12 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10 group/card cursor-pointer transition-all duration-300 hover:shadow-xl">
                     <div class="md:hidden mb-2 border-b pb-2">
                         <h3 class="text-lg font-bold text-indigo-600">Day 1: Departure</h3>
                         <p class="text-xs text-gray-500">23rd Feb 2026</p>
                     </div>
                     <h4 class="font-bold text-base sm:text-lg mb-1">Rajkot <i class="fas fa-arrow-right text-xs mx-1 text-gray-400"></i> Mumbai</h4>
-                    <p class="text-sm sm:text-base text-gray-600">Train journey begins! (3:00 PM)</p>
+                    <p class="text-sm sm:text-base text-gray-600 font-medium">Train journey begins!</p>
+                    <div class="max-h-0 overflow-hidden group-hover/card:max-h-40 transition-all duration-500 ease-in-out opacity-0 group-hover/card:opacity-100">
+                        <div class="pt-3 mt-3 border-t border-gray-100">
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>🚆 Train journey from Rajkot to Mumbai at 3:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <!-- Day 2 -->
             <div class="relative z-10 mb-8 md:flex md:justify-between items-center flex-row-reverse group">
                 <div class="hidden md:block md:w-5/12 text-left pl-8">
@@ -138,15 +146,35 @@
                         <i class="fas fa-rocket text-xl"></i>
                     </div>
                 </div>
-                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-orange-500 ml-12 md:mr-0 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10">
+                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-orange-500 ml-12 md:mr-0 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10 group/card cursor-pointer transition-all duration-300 hover:shadow-xl">
                     <div class="md:hidden mb-2 border-b pb-2">
                         <h3 class="text-lg font-bold text-orange-500">Day 2: Imagica</h3>
                         <p class="text-xs text-gray-500">24th Feb 2026</p>
                     </div>
-                    <p class="text-sm sm:text-base text-gray-700 font-medium">Full Day at Imagica Theme Park</p>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Overnight stay at Lonavala.</p>
+                    <p class="text-sm sm:text-base text-gray-700 font-medium">Mumbai → Imagica → Lonavala</p>
+                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Full day of thrills!</p>
+                    <div class="max-h-0 overflow-hidden group-hover/card:max-h-96 transition-all duration-500 ease-in-out opacity-0 group-hover/card:opacity-100">
+                        <div class="pt-3 mt-3 border-t border-gray-100">
+                            <ul class="text-xs sm:text-sm text-gray-600 space-y-2">
+                                <li>🚌 Direct travel to Lonavala Resort</li>
+                                <li>🍽️ Breakfast at the resort</li>
+                                <li>🎢 <span class="font-semibold">Full Day at Imagica:</span>
+                                    <ul class="list-disc pl-4 mt-1 space-y-0.5 text-gray-500">
+                                        <li>Thrilling rides</li>
+                                        <li>Fun attractions</li>
+                                        <li>Unlimited excitement</li>
+                                        <li>Lunch included</li>
+                                    </ul>
+                                </li>
+                                <li>🍽️ Dinner after Imagica visit</li>
+                                <li>🏨 Resort stay in Lonavala</li>
+                                <li>🌙 Night visit to Lonavala scenery (optional)</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+
              <!-- Day 3 -->
             <div class="relative z-10 mb-8 md:flex md:justify-between items-center group">
                 <div class="hidden md:block md:w-5/12 text-right pr-8">
@@ -158,15 +186,29 @@
                         <i class="fas fa-industry text-xl"></i>
                     </div>
                 </div>
-                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-green-500 ml-12 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10">
+                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-green-500 ml-12 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10 group/card cursor-pointer transition-all duration-300 hover:shadow-xl">
                      <div class="md:hidden mb-2 border-b pb-2">
                         <h3 class="text-lg font-bold text-green-600">Day 3: Pune</h3>
                         <p class="text-xs text-gray-500">25th Feb 2026</p>
                     </div>
-                    <p class="text-sm sm:text-base text-gray-700 font-medium">Industrial Visit</p>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Evening at Mahabaleshwar Night Market.</p>
+                    <p class="text-sm sm:text-base text-gray-700 font-medium">Lonavala → Pune → Mahabaleshwar</p>
+                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Industrial Visit & Night Market.</p>
+                    <div class="max-h-0 overflow-hidden group-hover/card:max-h-96 transition-all duration-500 ease-in-out opacity-0 group-hover/card:opacity-100">
+                        <div class="pt-3 mt-3 border-t border-gray-100">
+                            <ul class="text-xs sm:text-sm text-gray-600 space-y-2">
+                                <li>🍽️ Breakfast at Resort</li>
+                                <li>🚌 Travel to Pune</li>
+                                <li>🏭 Industrial / College Visit (concludes before 12:00 PM)</li>
+                                <li>🚌 Scenic drive to Mahabaleshwar</li>
+                                <li>🏨 Resort stay in Mahabaleshwar</li>
+                                <li>🍽️ Dinner at Resort</li>
+                                <li>🌙 Visit to Mahabaleshwar Night Market</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+
              <!-- Day 4 -->
             <div class="relative z-10 mb-8 md:flex md:justify-between items-center flex-row-reverse group">
                 <div class="hidden md:block md:w-5/12 text-left pl-8">
@@ -178,15 +220,33 @@
                         <i class="fas fa-camera-retro text-xl"></i>
                     </div>
                 </div>
-                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-pink-500 ml-12 md:mr-0 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10">
+                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-pink-500 ml-12 md:mr-0 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10 group/card cursor-pointer transition-all duration-300 hover:shadow-xl">
                     <div class="md:hidden mb-2 border-b pb-2">
                         <h3 class="text-lg font-bold text-pink-500">Day 4: Sightseeing</h3>
                         <p class="text-xs text-gray-500">26th Feb 2026</p>
                     </div>
-                    <p class="text-sm sm:text-base text-gray-700 font-medium">Mahabaleshwar Points</p>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Return journey via train in the evening.</p>
+                    <p class="text-sm sm:text-base text-gray-700 font-medium">Mahabaleshwar Sightseeing</p>
+                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Return journey via train.</p>
+                    <div class="max-h-0 overflow-hidden group-hover/card:max-h-96 transition-all duration-500 ease-in-out opacity-0 group-hover/card:opacity-100">
+                        <div class="pt-3 mt-3 border-t border-gray-100">
+                            <ul class="text-xs sm:text-sm text-gray-600 space-y-2">
+                                <li>🍽️ Breakfast at Resort</li>
+                                <li>🌄 <span class="font-semibold">Full Day Sightseeing:</span>
+                                    <ul class="list-disc pl-4 mt-1 space-y-0.5 text-gray-500">
+                                        <li>Famous viewpoints</li>
+                                        <li>Lush greenery & hill views</li>
+                                        <li>Popular tourist attractions</li>
+                                    </ul>
+                                </li>
+                                <li>⏰ Departure from Mahabaleshwar at 5:00 PM</li>
+                                <li>🚌 Travel to Mumbai</li>
+                                <li>🚆 Train journey from Mumbai to Rajkot</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+
              <!-- Day 5 -->
             <div class="relative z-10 mb-8 md:flex md:justify-between items-center group">
                 <div class="hidden md:block md:w-5/12 text-right pr-8">
@@ -198,13 +258,20 @@
                         <i class="fas fa-home text-xl"></i>
                     </div>
                 </div>
-                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-gray-500 ml-12 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10">
+                <div class="bg-white p-5 sm:p-6 rounded-lg shadow-md md:w-5/12 border-l-4 border-gray-500 ml-12 md:ml-0 mt-[-3.5rem] md:mt-0 relative z-10 group/card cursor-pointer transition-all duration-300 hover:shadow-xl">
                     <div class="md:hidden mb-2 border-b pb-2">
                         <h3 class="text-lg font-bold text-gray-600">Day 5: Arrival</h3>
                         <p class="text-xs text-gray-500">27th Feb 2026</p>
                     </div>
                     <p class="text-sm sm:text-base text-gray-700 font-medium">Welcome Home</p>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Arrival at Rajkot (approx 11:00 AM)</p>
+                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Back to Rajkot</p>
+                    <div class="max-h-0 overflow-hidden group-hover/card:max-h-40 transition-all duration-500 ease-in-out opacity-0 group-hover/card:opacity-100">
+                        <div class="pt-3 mt-3 border-t border-gray-100">
+                            <ul class="text-sm text-gray-600 space-y-1">
+                                <li>⏰ Expected arrival at Rajkot at 11:00 AM</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -338,88 +405,117 @@
                         <textarea name="additional" rows="2" class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 focus:outline-none transition-colors"></textarea>
                     </div>
 
-                    <!-- Enhanced Payment Section -->
+                    <!-- Payment Container -->
                     <div class="md:col-span-2 bg-gradient-to-br from-indigo-50 to-white p-6 sm:p-8 rounded-2xl border border-indigo-100 shadow-sm relative overflow-hidden group">
-                        <!-- Decorative background element -->
+                        <!-- Decorative element -->
                         <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-indigo-100 rounded-full opacity-50 blur-xl"></div>
 
                         <div class="relative z-10">
-                            <h3 class="text-xl font-bold text-indigo-900 mb-4 flex items-center justify-center sm:justify-start">
+                            <h3 class="text-xl font-bold text-indigo-900 mb-6 flex items-center">
                                 <span class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center mr-3 shadow-md">
-                                    <i class="fas fa-qrcode text-sm"></i>
+                                    <i class="fas fa-wallet text-sm"></i>
                                 </span>
-                                Scan to Pay
+                                Payment Details
                             </h3>
 
-                            <!-- Payment Type Toggle -->
-                            <div class="flex justify-center mb-8">
-                                <div class="bg-white p-1.5 rounded-xl border border-indigo-100 shadow-sm inline-flex relative">
-                                    <button type="button" onclick="setPaymentType('deposit')" id="btn-deposit" class="px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 bg-indigo-600 text-white shadow-md z-10">
-                                        Deposit (₹3,000)
-                                    </button>
-                                    <button type="button" onclick="setPaymentType('full')" id="btn-full" class="px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 text-gray-600 hover:bg-gray-50 z-10">
-                                        Full Trip (₹8,000)
-                                    </button>
+                            <!-- 1. Payment Method Toggle (Online/Cash) -->
+                            <div class="mb-6">
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Select Payment Method *</label>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="paymentMethod" value="Online" class="peer sr-only" onchange="togglePaymentMethod('online')">
+                                        <div class="rounded-xl border-2 border-gray-200 p-4 text-center transition-all peer-checked:border-indigo-600 peer-checked:bg-indigo-50 hover:bg-gray-50">
+                                            <i class="fas fa-qrcode text-2xl mb-1 text-indigo-600"></i>
+                                            <div class="font-bold text-gray-700">Online (UPI)</div>
+                                        </div>
+                                    </label>
+                                    <label class="cursor-pointer">
+                                        <input type="radio" name="paymentMethod" value="Cash" checked class="peer sr-only" onchange="togglePaymentMethod('cash')">
+                                        <div class="rounded-xl border-2 border-gray-200 p-4 text-center transition-all peer-checked:border-indigo-600 peer-checked:bg-indigo-50 hover:bg-gray-50">
+                                            <i class="fas fa-money-bill-wave text-2xl mb-1 text-green-600"></i>
+                                            <div class="font-bold text-gray-700">Cash</div>
+                                        </div>
+                                    </label>
                                 </div>
                             </div>
 
-                            <!-- Hidden input to store selection for form submission -->
-                            <input type="hidden" name="paymentType" id="paymentTypeInput" value="Deposit">
-                            
-                            <div class="flex flex-col md:flex-row items-center gap-8">
-                                <!-- QR Code Card -->
-                                <div class="bg-white p-3 rounded-xl shadow-md border border-gray-100 flex-shrink-0 transform transition-transform group-hover:scale-105 duration-300">
-                                    <img id="qr-image" 
-                                         src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi%3A%2F%2Fpay%3Fpa%3Drdpicalbum%40oksbi%26pn%3DTrip%2520Deposit%26am%3D3000%26cu%3DINR" 
-                                         alt="Payment QR Code" 
-                                         class="w-40 h-40 object-contain rounded-lg">
-                                    <p class="text-center text-xs font-medium text-gray-400 mt-2 tracking-wider uppercase">Scan with UPI</p>
+                            <!-- 2. Amount Selection (Always Visible) -->
+                            <div class="mb-6 flex justify-center">
+                                <div class="bg-white p-1.5 rounded-xl border border-indigo-100 shadow-sm inline-flex relative">
+                                    <button type="button" onclick="setAmount('deposit')" id="btn-deposit" class="px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-200 bg-indigo-600 text-white shadow-md z-10">
+                                        Deposit (₹3,000)
+                                    </button>
+                                    <button type="button" onclick="setAmount('full')" id="btn-full" class="px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 text-gray-600 hover:bg-gray-50 z-10">
+                                        Full Trip (₹8,000)
+                                    </button>
+                                </div>
+                                <input type="hidden" name="paymentAmountType" id="paymentAmountTypeInput" value="Deposit">
+                            </div>
+
+                            <!-- 3A. Online Payment Section (QR + Upload) -->
+                            <div id="online-payment-section" class="hidden transition-all duration-300">
+                                <div class="flex flex-col md:flex-row items-center gap-8 mb-6">
+                                    <!-- QR Code -->
+                                    <div class="bg-white p-3 rounded-xl shadow-md border border-gray-100 flex-shrink-0">
+                                        <img id="qr-image" 
+                                             src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi%3A%2F%2Fpay%3Fpa%3Drdpicalbum%40oksbi%26pn%3DTrip%2520Deposit%26am%3D3000%26cu%3DINR" 
+                                             alt="Payment QR Code" 
+                                             class="w-40 h-40 object-contain rounded-lg">
+                                        <p class="text-center text-xs font-medium text-gray-400 mt-2 uppercase">Scan to Pay</p>
+                                    </div>
+
+                                    <!-- Details -->
+                                    <div class="flex-1 text-center md:text-left w-full space-y-4">
+                                        <div>
+                                            <p class="text-sm text-gray-500 font-medium mb-1">Amount to Pay</p>
+                                            <div class="flex items-baseline justify-center md:justify-start">
+                                                <span id="display-amount" class="text-4xl font-extrabold text-gray-900">₹3,000</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bg-indigo-50/50 px-4 py-3 rounded-lg border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-2 group/upi">
+                                            <div class="text-left">
+                                                <p class="text-[10px] text-indigo-400 uppercase font-bold tracking-wider">UPI ID</p>
+                                                <p class="font-mono font-medium text-indigo-700 select-all">rdpicalbum@oksbi</p>
+                                            </div>
+                                             <i class="fas fa-copy text-indigo-300 group-hover/upi:text-indigo-500 transition-colors"></i>
+                                        </div>
+                                        
+                                        <div class="pt-2">
+                                            <a id="pay-link" href="upi://pay?pa=rdpicalbum@oksbi&pn=Trip%20Deposit&am=3000&cu=INR" 
+                                               class="inline-flex w-full sm:w-auto items-center justify-center bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg hover:-translate-y-0.5">
+                                                <i class="fas fa-mobile-alt mr-2 animate-pulse"></i> Pay via App
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <!-- Payment Details -->
-                                <div class="flex-1 text-center md:text-left w-full space-y-4">
-                                    <div>
-                                        <p class="text-sm text-gray-500 font-medium mb-1">Selected Payment Amount</p>
-                                        <div class="flex items-baseline justify-center md:justify-start">
-                                            <span id="display-amount" class="text-4xl font-extrabold text-gray-900">₹3,000</span>
-                                            <span class="ml-2 text-sm text-gray-500">/ person</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <!-- UPI ID Box -->
-                                    <div class="bg-indigo-50/50 px-4 py-3 rounded-lg border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-2 group/upi">
-                                        <div class="text-left">
-                                            <p class="text-[10px] text-indigo-400 uppercase font-bold tracking-wider">UPI ID</p>
-                                            <p class="font-mono font-medium text-indigo-700 select-all">rdpicalbum@oksbi</p>
-                                        </div>
-                                         <i class="fas fa-copy text-indigo-300 group-hover/upi:text-indigo-500 transition-colors"></i>
-                                    </div>
-                                    
-                                    <!-- Pay Now Button -->
-                                    <div class="pt-2">
-                                        <a id="pay-link" href="upi://pay?pa=rdpicalbum@oksbi&pn=Trip%20Deposit&am=3000&cu=INR" 
-                                           class="inline-flex w-full sm:w-auto items-center justify-center bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg shadow-green-200 hover:shadow-xl hover:-translate-y-0.5">
-                                            <i class="fas fa-mobile-alt mr-2 animate-pulse"></i> Pay Now via App
-                                        </a>
-                                        <p class="text-xs text-gray-400 mt-2 md:hidden text-center">(Tap to open GPay/PhonePe/Paytm)</p>
-                                    </div>
+                                <!-- Payment Upload (Only for Online) -->
+                                <div class="bg-yellow-50 p-5 rounded-lg border border-yellow-200">
+                                     <label class="block text-sm font-bold text-yellow-800 mb-2">Upload Payment Screenshot *</label>
+                                     <input type="file" id="paymentFile" class="block w-full text-sm text-yellow-900 file:mr-4 file:py-2.5 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-white file:text-yellow-700 hover:file:bg-yellow-100 cursor-pointer">
                                 </div>
+                            </div>
+
+                            <!-- 3B. Cash Payment Section (Visible by default) -->
+                            <div id="cash-payment-section" class="text-center py-6 bg-green-50 rounded-xl border border-green-100">
+                                <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                                    <i class="fas fa-hand-holding-usd text-3xl text-green-600"></i>
+                                </div>
+                                <h4 class="text-lg font-bold text-green-800 mb-2">Cash Payment Selected</h4>
+                                <p class="text-green-700 text-sm px-6">
+                                    Please pay <strong id="cash-display-amount">₹3,000</strong> in cash to Yash Vinchhi or Raviraj Dhadhal to confirm your seat.
+                                </p>
                             </div>
 
                              <!-- Warning Strip -->
                              <div class="mt-6 bg-red-50 border border-red-100 rounded-lg p-3 flex items-start gap-3">
                                 <i class="fas fa-exclamation-circle text-red-500 mt-0.5"></i>
                                 <div class="text-sm text-red-700">
-                                    <span class="font-bold">Important:</span> This payment is <span class="font-bold underline decoration-red-300">Non-Refundable</span>. Please ensure you are certain before proceeding.
+                                    <span class="font-bold">Important:</span> This payment is <span class="font-bold underline decoration-red-300">Non-Refundable</span>.
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                      <!-- Payment Upload -->
-                    <div class="md:col-span-2 bg-yellow-50 p-5 rounded-lg border border-yellow-200">
-                         <label class="block text-sm font-bold text-yellow-800 mb-2">Upload Payment Screenshot *</label>
-                         <input type="file" id="paymentFile" required class="block w-full text-sm text-yellow-900 file:mr-4 file:py-2.5 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-white file:text-yellow-700 hover:file:bg-yellow-100 cursor-pointer">
                     </div>
                 </div>
 
@@ -475,54 +571,73 @@
         // *** UPDATED SCRIPT URL ***
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz0p7N6xati0fD8qYFR71sjH8axY61SqtZgFJV4nkohCbT73E5qFmHPQOeBhpvKp75N/exec";
         
-        // --- Payment Logic ---
-        function setPaymentType(type) {
-            const qrImage = document.getElementById('qr-image');
-            const displayAmount = document.getElementById('display-amount');
-            const payLink = document.getElementById('pay-link');
+        let currentAmountType = 'deposit'; // 'deposit' or 'full'
+        const upiID = "rdpicalbum@oksbi";
+
+        // Toggle Payment Method (Online vs Cash)
+        function togglePaymentMethod(method) {
+            const onlineSection = document.getElementById('online-payment-section');
+            const cashSection = document.getElementById('cash-payment-section');
+            const paymentFile = document.getElementById('paymentFile');
+
+            if (method === 'online') {
+                onlineSection.classList.remove('hidden');
+                cashSection.classList.add('hidden');
+                paymentFile.required = true; // Screenshot mandatory for online
+                updateOnlineDetails(); // Refresh QR
+            } else {
+                onlineSection.classList.add('hidden');
+                cashSection.classList.remove('hidden');
+                paymentFile.required = false; // No screenshot for cash
+                updateCashDetails(); // Refresh text
+            }
+        }
+
+        // Set Amount Type (Deposit vs Full)
+        function setAmount(type) {
+            currentAmountType = type;
             const btnDeposit = document.getElementById('btn-deposit');
             const btnFull = document.getElementById('btn-full');
-            const paymentTypeInput = document.getElementById('paymentTypeInput');
-
-            const upiID = "rdpicalbum@oksbi";
-            let amount, note, label;
+            const input = document.getElementById('paymentAmountTypeInput');
 
             // Styles
             const activeClass = "bg-indigo-600 text-white shadow-md font-bold";
             const inactiveClass = "text-gray-600 hover:bg-gray-50 font-medium";
 
             if (type === 'deposit') {
-                amount = 3000;
-                note = "Trip Deposit";
-                label = "Deposit";
-                
-                // Update Button Styles
                 btnDeposit.className = `px-5 py-2.5 rounded-lg text-sm transition-all duration-200 z-10 ${activeClass}`;
                 btnFull.className = `px-5 py-2.5 rounded-lg text-sm transition-all duration-200 z-10 ${inactiveClass}`;
+                input.value = "Deposit";
             } else {
-                amount = 8000;
-                note = "Trip Full Payment";
-                label = "Full Payment";
-
-                // Update Button Styles
                 btnDeposit.className = `px-5 py-2.5 rounded-lg text-sm transition-all duration-200 z-10 ${inactiveClass}`;
                 btnFull.className = `px-5 py-2.5 rounded-lg text-sm transition-all duration-200 z-10 ${activeClass}`;
+                input.value = "Full Payment";
             }
 
-            // Update UI Content
-            displayAmount.textContent = `₹${amount.toLocaleString('en-IN')}`;
-            paymentTypeInput.value = label;
+            // Update visible sections
+            updateOnlineDetails();
+            updateCashDetails();
+        }
 
-            // Update Link & QR
+        function updateOnlineDetails() {
+            const amount = currentAmountType === 'deposit' ? 3000 : 8000;
+            const note = currentAmountType === 'deposit' ? "Trip Deposit" : "Trip Full Payment";
+            
+            document.getElementById('display-amount').textContent = `₹${amount.toLocaleString('en-IN')}`;
+            
             const upiLink = `upi://pay?pa=${upiID}&pn=${encodeURIComponent(note)}&am=${amount}&cu=INR`;
             const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(upiLink)}`;
             
-            qrImage.src = qrUrl;
-            payLink.href = upiLink;
+            document.getElementById('qr-image').src = qrUrl;
+            document.getElementById('pay-link').href = upiLink;
+        }
+
+        function updateCashDetails() {
+            const amount = currentAmountType === 'deposit' ? "₹3,000" : "₹8,000";
+            document.getElementById('cash-display-amount').textContent = amount;
         }
 
         // --- Form Submission Logic ---
-        // Helper to convert file to base64
         const fileToBase64 = file => new Promise((resolve, reject) => {
             const reader = new FileReader();
             reader.readAsDataURL(file);
@@ -549,23 +664,21 @@
             messageBox.classList.add('hidden');
 
             try {
-                // Gather Basic Text Data
                 const formData = new FormData(this);
                 const data = Object.fromEntries(formData.entries());
 
-                // Handle ID Proof
+                // Handle ID Proof (Always required)
                 const idFile = document.getElementById('idProofFile').files[0];
                 if (idFile) {
                     data.idProofFile = await fileToBase64(idFile);
                 }
 
-                // Handle Payment File
+                // Handle Payment File (Only if Online)
                 const payFile = document.getElementById('paymentFile').files[0];
-                if (payFile) {
+                if (data.paymentMethod === 'Online' && payFile) {
                     data.paymentFile = await fileToBase64(payFile);
                 }
 
-                // Send to Apps Script
                 await fetch(SCRIPT_URL, {
                     method: "POST",
                     body: JSON.stringify(data)
@@ -575,15 +688,14 @@
                     <div class="text-green-800 bg-green-50 border border-green-200 p-4 rounded-lg">
                         <i class="fas fa-check-circle text-3xl mb-2 text-green-600"></i><br>
                         <strong class="text-lg">Registration Successful!</strong><br>
-                        <span class="text-sm">Files uploaded and data saved. You are ready to go!</span>
+                        <span class="text-sm">Data saved. You are ready to go!</span>
                     </div>
                 `;
                 messageBox.classList.remove('hidden');
                 this.reset();
                 document.getElementById('idFileName').textContent = "No file selected";
-                // Reset Payment Selection
-                setPaymentType('deposit'); 
-                // Scroll to message
+                setAmount('deposit'); 
+                togglePaymentMethod('cash'); // Reset to default (Cash)
                 messageBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
             } catch (error) {
